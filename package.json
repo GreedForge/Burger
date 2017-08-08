@@ -17,5 +17,8 @@
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"
-  }
+  },
+  "scripts": {
+       "start": "node server.js"
+     }
 }
