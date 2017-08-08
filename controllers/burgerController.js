@@ -17,10 +17,12 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
+  var time =  Date.now();
+  console.log(req.body.name);
   burger.create([
-    "name", "devoured"
+    "burger_name", "devoured", "date"
   ], [
-    req.body.name, false
+    req.body.name, false, "2008-01-01 00:00:01"
   ], function() {
     res.redirect("/");
   });
